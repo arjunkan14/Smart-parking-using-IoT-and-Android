@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
+
+    tools:context="com.example.aditya.parkingnew.AddmoneyToWallet">
+
+    <Button
+        android:id="@+id/amount_add"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="  Add  "
+
+        android:textColor="@color/colorPrimary"
+        android:background="@color/colorAccenttt"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true" />
+
+    <EditText
+        android:id="@+id/amount_to_add"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="number"
+
+        android:hint="Amount To Add"
+
+        android:textColor="@color/colorAccenttt"
+        android:textColorHint="@color/colorAccenttt"
+        android:backgroundTint="@color/colorAccenttt"
+        android:layout_marginTop="134dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+</RelativeLayout>

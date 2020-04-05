@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
+    tools:context="com.example.aditya.parkingnew.DashboardActivity">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbargk"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:titleTextColor="@color/text"
+        android:background="@color/gktoolbar"
+        app:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+
+        />
+
+    <Button
+        android:id="@+id/book_slot"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+      android:layout_marginTop="38dp"
+        android:background="@drawable/book_slot"
+        android:textColor="@color/colorPrimary"
+        android:layout_marginLeft="40dp"
+        android:layout_marginStart="40dp"
+        android:layout_below="@+id/toolbargk"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        />
+
+    <Button
+        android:id="@+id/history"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="49dp"
+        android:layout_marginStart="49dp"
+        android:background="@drawable/history"
+        android:layout_alignBaseline="@+id/book_slot"
+        android:layout_alignBottom="@+id/book_slot"
+        android:layout_toRightOf="@+id/book_slot"
+        android:layout_toEndOf="@+id/book_slot" />
+
+    <Button
+        android:id="@+id/wallet"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="101dp"
+        android:layout_below="@+id/book_slot"
+        android:layout_alignLeft="@+id/book_slot"
+        android:layout_alignStart="@+id/book_slot"
+        android:background="@drawable/wallet"/>
+
+    <Button
+        android:id="@+id/qr"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/history"
+        android:layout_alignStart="@+id/history"
+        android:layout_alignTop="@+id/wallet"
+       android:background="@drawable/qr_code"/>
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/book_slot"
+        android:layout_alignStart="@+id/book_slot"
+        android:layout_below="@+id/book_slot"
+        android:layout_marginLeft="31dp"
+        android:layout_marginStart="31dp"
+        android:layout_marginTop="24dp"
+        android:text="Book Slot"
+        android:textColor="@color/colorAccenttt"/>
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="39dp"
+        android:layout_marginRight="39dp"
+        android:text="History"
+        android:textColor="@color/colorAccenttt"
+        android:layout_alignBaseline="@+id/textView2"
+        android:layout_alignBottom="@+id/textView2"
+        android:layout_alignRight="@+id/history"
+        android:layout_alignEnd="@+id/history" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textView2"
+        android:layout_alignStart="@+id/textView2"
+        android:layout_below="@+id/wallet"
+        android:layout_marginTop="25dp"
+        android:text="Wallet"
+        android:textColor="@color/colorAccenttt"/>
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/textView4"
+        android:layout_alignRight="@+id/textView4"
+        android:layout_alignTop="@+id/textView5"
+        android:text="QR Code"
+        android:textColor="@color/colorAccenttt"/>
+
+    <Button
+        android:id="@+id/profile"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_alignBottom="@+id/toolbargk"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginEnd="14dp"
+        android:layout_marginRight="14dp"
+        android:text=""
+        android:padding="5dp"
+        android:background="@drawable/contact"/>
+
+</RelativeLayout>

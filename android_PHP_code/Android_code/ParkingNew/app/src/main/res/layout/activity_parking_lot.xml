@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    tools:context="com.example.aditya.parkingnew.ParkingLot">
+
+    <Spinner
+        android:id="@+id/spinnerarea"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:entries="@array/country_arrays"
+        android:prompt="@string/country_prompt"
+        android:textColor="@color/colorPrimary"
+
+
+        android:ellipsize="middle"
+        android:maxLines="1"
+
+        android:spinnerMode="dropdown"
+        android:textSize="20sp"
+        android:layout_marginTop="12dp"
+        android:layout_alignParentTop="true"
+        android:layout_toRightOf="@+id/select_area"
+        android:layout_toEndOf="@+id/select_area"
+        android:layout_toLeftOf="@+id/select_area"
+        tools:ignore="EllipsizeMaxLines" />
+
+
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/numbers"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/spinnerarea"
+        android:layout_marginTop="10dp"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"
+        />
+
+    <TextView
+        android:id="@+id/select_area"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="31dp"
+        android:layout_marginStart="31dp"
+        android:text="Select Area  :   "
+        android:layout_marginRight="8dp"
+        android:layout_alignBaseline="@+id/spinnerarea"
+        android:layout_alignBottom="@+id/spinnerarea"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:textColor="@color/colorPrimary"
+        android:textSize="20sp"/>
+
+
+    <!--<Button-->
+            <!--android:id="@+id/one"-->
+            <!--android:layout_width="120dp"-->
+            <!--android:layout_height="120dp"-->
+            <!--android:text="1"-->
+            <!--tools:layout_editor_absoluteY="34dp"-->
+            <!--tools:layout_editor_absoluteX="30dp"-->
+            <!--android:background="@color/available"/>-->
+
+
+    <!--<Button-->
+        <!--android:id="@+id/two"-->
+        <!--android:layout_width="120dp"-->
+        <!--android:layout_height="120dp"-->
+        <!--android:text="2"-->
+        <!--tools:layout_editor_absoluteY="34dp"-->
+        <!--tools:layout_editor_absoluteX="220dp"-->
+        <!--android:background="@color/available"/>-->
+
+    <!--<Button-->
+        <!--android:id="@+id/three"-->
+        <!--android:layout_width="120dp"-->
+        <!--android:layout_height="120dp"-->
+        <!--android:text="3"-->
+        <!--tools:layout_editor_absoluteY="195dp"-->
+        <!--tools:layout_editor_absoluteX="30dp"-->
+        <!--android:background="@color/available"/>-->
+
+    <!--<Button-->
+        <!--android:id="@+id/four"-->
+        <!--android:layout_width="120dp"-->
+        <!--android:layout_height="120dp"-->
+        <!--android:text="4"-->
+        <!--tools:layout_editor_absoluteY="195dp"-->
+        <!--tools:layout_editor_absoluteX="220dp"-->
+        <!--android:background="@color/available"/>-->
+
+    <!--<Button-->
+        <!--android:id="@+id/five"-->
+        <!--android:layout_width="120dp"-->
+        <!--android:layout_height="120dp"-->
+        <!--android:text="5"-->
+        <!--tools:layout_editor_absoluteY="356dp"-->
+        <!--tools:layout_editor_absoluteX="30dp"-->
+        <!--android:background="@color/available"/>-->
+
+    <!--<Button-->
+        <!--android:id="@+id/six"-->
+        <!--android:layout_width="120dp"-->
+        <!--android:layout_height="120dp"-->
+        <!--android:text="6"-->
+        <!--tools:layout_editor_absoluteY="356dp"-->
+        <!--tools:layout_editor_absoluteX="220dp"-->
+        <!--android:background="@color/available"/>-->
+</RelativeLayout>

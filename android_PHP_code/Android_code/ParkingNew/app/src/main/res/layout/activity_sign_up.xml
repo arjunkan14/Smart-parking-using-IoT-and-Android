@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    tools:context="com.example.aditya.parkingnew.SignUp">
+
+    <EditText
+        android:id="@+id/signupname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:hint="Name"
+        tools:layout_editor_absoluteX="85dp"
+        tools:layout_editor_absoluteY="16dp"
+        android:textColor="@color/colorAccenttt"
+        android:textColorHint="@color/colorAccenttt"
+        android:backgroundTint="@color/colorAccenttt"
+        android:layout_above="@+id/email"
+        android:layout_alignLeft="@+id/email"
+        android:layout_alignStart="@+id/email" />
+
+    <EditText
+        android:id="@+id/email"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:hint="Email"
+        tools:layout_editor_absoluteX="85dp"
+        tools:layout_editor_absoluteY="59dp"
+        android:textColor="@color/colorAccenttt"
+        android:textColorHint="@color/colorAccenttt"
+        android:backgroundTint="@color/colorAccenttt"
+        android:layout_above="@+id/contact"
+        android:layout_alignLeft="@+id/contact"
+        android:layout_alignStart="@+id/contact" />
+
+    <EditText
+        android:id="@+id/contact"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="number"
+        android:hint="Contact"
+        tools:layout_editor_absoluteX="85dp"
+        tools:layout_editor_absoluteY="102dp"
+        android:textColor="@color/colorAccenttt"
+        android:textColorHint="@color/colorAccenttt"
+        android:backgroundTint="@color/colorAccenttt"
+        android:layout_above="@+id/license"
+        android:layout_alignLeft="@+id/license"
+        android:layout_alignStart="@+id/license" />
+
+    <EditText
+        android:id="@+id/license"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:hint="License no"
+        tools:layout_editor_absoluteX="85dp"
+        tools:layout_editor_absoluteY="145dp"
+        android:textColor="@color/colorAccenttt"
+        android:textColorHint="@color/colorAccenttt"
+        android:backgroundTint="@color/colorAccenttt"
+        android:layout_above="@+id/adharcard"
+        android:layout_alignLeft="@+id/adharcard"
+        android:layout_alignStart="@+id/adharcard" />
+
+    <EditText
+        android:id="@+id/adharcard"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="number"
+        android:hint="AdharCard"
+        tools:layout_editor_absoluteX="85dp"
+        tools:layout_editor_absoluteY="188dp"
+        android:textColor="@color/colorAccenttt"
+        android:textColorHint="@color/colorAccenttt"
+        android:backgroundTint="@color/colorAccenttt"
+        android:layout_centerVertical="true"
+        android:layout_alignLeft="@+id/password"
+        android:layout_alignStart="@+id/password" />
+
+    <EditText
+        android:id="@+id/password"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPassword"
+        android:hint="Password"
+        tools:layout_editor_absoluteX="85dp"
+        tools:layout_editor_absoluteY="234dp"
+        android:textColor="@color/colorAccenttt"
+        android:textColorHint="@color/colorAccenttt"
+        android:backgroundTint="@color/colorAccenttt"
+        android:layout_below="@+id/adharcard"
+        android:layout_alignLeft="@+id/confirmpassword"
+        android:layout_alignStart="@+id/confirmpassword" />
+
+
+    <EditText
+        android:id="@+id/confirmpassword"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPassword"
+        android:hint="Confirm Password"
+        tools:layout_editor_absoluteX="85dp"
+        tools:layout_editor_absoluteY="277dp"
+        android:textColor="@color/colorAccenttt"
+        android:textColorHint="@color/colorAccenttt"
+        android:backgroundTint="@color/colorAccenttt"
+        android:layout_below="@+id/password"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:id="@+id/signUp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Sign Up"
+        android:textColor="@color/colorPrimary"
+        android:background="@color/colorAccenttt"
+        tools:layout_editor_absoluteX="148dp"
+        tools:layout_editor_absoluteY="358dp"
+        android:layout_below="@+id/confirmpassword"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="41dp" />
+
+
+    <CheckBox
+        android:id="@+id/checkBox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginStart="15dp"
+        android:text="Terms and conditions"
+        android:textColor="@color/colorAccenttt"
+        android:textColorHint="@color/colorAccenttt"
+        android:backgroundTint="@color/colorAccenttt"
+        android:layout_below="@+id/confirmpassword"
+        android:layout_alignLeft="@+id/confirmpassword"
+        android:layout_alignStart="@+id/confirmpassword"
+        style="@style/my_checkbox_style"/>
+
+</RelativeLayout>

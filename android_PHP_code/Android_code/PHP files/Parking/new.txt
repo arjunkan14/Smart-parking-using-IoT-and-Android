@@ -1,0 +1,70 @@
+<?php
+ 
+require("../config.php");
+
+
+$SlotNo = $_POST['SlotNo'];
+$exitTime= $_POST['exitTime'];
+
+
+$SlotNo ="one";
+
+
+
+$status="available";
+
+
+
+                      $query = $db->prepare("UPDATE parkingSlot  SET  status='$status', exit_time='$exitTime'  WHERE slot_no='$SlotNo'");
+
+                             $data=$query->execute();
+
+								 if ($data) {
+										 $json['message'] = 'success';
+                                                                                   echo json_encode($json);
+
+     try{
+                       $queryCheck=$db->prepare("SELECT * FROM parkingSlot WHERE slot_no='$SlotNo' LIMIT 1");
+                                $resultt=$queryCheck->execute();
+								
+                           $dataa=$queryCheck->fetchAll(PDO::FETCH_ASSOC);
+						        
+								 if ($dataa) {
+                                                                      foreach($dataa as $row){
+									 $json['message'] = 'success';
+		                                                          
+                                                                      $json['user_id'] =$row["user_id"];
+                                                                      $json['exit_time']=$row["exit_time"];
+									
+                                                                                                                                                   
+                                                                                  echo json_encode($json);
+
+                                                                           
+                                                                                     }
+                                                                              }
+								        else{
+								                 $json['message'] = 'error';		
+                                                                                 echo json_encode($json);
+								            }
+                                   
+                                
+                    }  
+                  catch(PDOException $e)
+                              {
+                                  echo $sql . "<br>" . $e->getMessage();
+                                }
+                                           
+                                      
+                                                                      
+									    }
+								        else{
+								                 $json['message'] = 'error';		
+                                                                                  echo json_encode($json);
+								            }
+										
+                                
+                 
+
+				       
+
+?>

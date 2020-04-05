@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+    <resources>
+
+    <color name="colorPrimary">#10BDB4</color>
+
+    <color name="colortool">#6600BCD4</color>
+
+    <color name="colorPrimaryDark">#31C5BD</color>
+
+    <color name="colorAccent">#4F000000</color>
+
+    <color name="semiTransparentWhite">#9CE6E6</color>
+
+    <color name="colorAccentt">#f0544f</color>
+
+    <color name="colorAccenttt">#ffffff</color>
+
+    <color name="colorOverlay">#50b4afaf</color>
+
+    <color name="colorAccentOverlay">#1400bcd4</color>
+
+    <color name="colorTransparentBlack">#80000000</color>
+
+    <color name="text">#f0544f</color>
+
+    <color name="BUTTONcolorTransparentBlack">#4F000000</color>
+
+    <color name="tabtextselectcolour">#000000</color>
+
+    <color name="myTransperant">#00ffffff</color>
+
+    <color name="backgrundcolourNavigation">#1A000000</color>
+
+    <color name="gktoolbar">#FF10BDB4</color>
+
+    <color name="available">#0c960e</color>
+
+</resources>

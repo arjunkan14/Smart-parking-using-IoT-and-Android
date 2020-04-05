@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+
+    <RelativeLayout
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:layout_margin="5dp"
+        android:padding="5dp"
+        android:background="#25c27f"
+        android:id="@+id/relativeLayout">
+
+
+        <TextView
+            android:id="@+id/vechiletype"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="33dp"
+            android:layout_marginStart="33dp"
+            android:layout_marginTop="20dp"
+            android:text="Car No"
+            android:textColor="@color/colorAccenttt"/>
+
+        <TextView
+            android:id="@+id/vechile_number"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/vechiletype"
+            android:layout_alignStart="@+id/vechiletype"
+            android:layout_below="@+id/vechiletype"
+            android:layout_marginTop="20dp"
+            android:text="License No"
+            android:textColor="@color/colorAccenttt"/>
+
+        <TextView
+            android:id="@+id/amount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/vechile_number"
+            android:layout_alignStart="@+id/vechile_number"
+            android:layout_below="@+id/vechile_number"
+            android:layout_marginTop="20dp"
+            android:text="Amount"
+            android:textColor="@color/colorAccenttt"/>
+
+        <TextView
+            android:id="@+id/date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/amount"
+            android:layout_alignStart="@+id/amount"
+            android:layout_below="@+id/amount"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="20dp"
+            android:text="Date"
+            android:textColor="@color/colorAccenttt"
+            />
+
+    </RelativeLayout>
+</RelativeLayout>

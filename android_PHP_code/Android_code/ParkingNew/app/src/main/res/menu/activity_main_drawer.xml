@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single"
+        android:id="@+id/main">
+        <item
+            android:id="@+id/Home"
+            android:title="Home"
+            />
+
+        <item
+            android:id="@+id/Pending"
+            android:title="Outstanding Amount"
+            />
+
+
+        <item
+        android:id="@+id/Invite"
+        android:title="Invite"
+        />
+
+    <item
+        android:id="@+id/RateUs"
+        android:title="Rate Us"
+        />
+    </group>
+
+
+    <group android:checkableBehavior="single"
+        android:id="@+id/ABOUTUS">
+        <item
+            android:id="@+id/about"
+            android:title="About Us"
+            />
+        <item
+            android:id="@+id/contactus"
+            android:title="Contact Us"
+            />
+
+        <item
+            android:id="@+id/logout"
+            android:title="Logout"
+            />
+
+    </group>
+
+
+
+</menu>

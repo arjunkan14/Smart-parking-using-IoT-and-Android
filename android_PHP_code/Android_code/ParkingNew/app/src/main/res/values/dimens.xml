@@ -1,0 +1,24 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="fab_margin">16dp</dimen>
+    <dimen name="nav_header_vertical_spacing">12dp</dimen>
+    <dimen name="nav_header_height">160dp</dimen>
+
+
+    <dimen name="gpvch_app_icon_margin">10dp</dimen>
+
+    <dimen name="gpvch_tv_version_code_margin_left">5dp</dimen>
+    <dimen name="gpvch_tv_version_code_margin_right">5dp</dimen>
+    <dimen name="gpvch_tv_version_code_margin_top">10dp</dimen>
+
+    <dimen name="gpvch_tv_header_whats_new">5dp</dimen>
+
+
+    <dimen name="standard_12">12dp</dimen>
+    <dimen name="standard_23">16dp</dimen>
+    <dimen name="standard_55">55dp</dimen>
+    <dimen name="standard_100">100dp</dimen>
+    <dimen name="standard_145">145dp</dimen>
+</resources>
